@@ -32,11 +32,23 @@ def parse_log_file(file_path):
                 })
             else:
                 print(f"Line did not match pattern or was malformed: {line.strip()}")
+            
         return pd.DataFrame(parsed_data)
     
+
+
+
+
+
+
+
+
 
 if __name__ == "__main__":
     
     log_file_path = 'app.log'  
     df = parse_log_file(log_file_path)
     print(df.head())  
+    print(df.info())
+    print(f'Number of Log Levels recevied in analysis: {df['Log Level'].value_counts()}')
+    df.to_csv('parsed_log_data.csv', index=False)
