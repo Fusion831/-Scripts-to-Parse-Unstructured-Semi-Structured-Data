@@ -1,0 +1,15 @@
+[2023-10-27 10:00:01] [INFO] - User 'admin' logged in successfully.
+[2023-10-27 10:00:05] [INFO] - Data processing task #12345 started.
+[2023-10-27 10:01:15] [DEBUG] - Checking connection for service 'db_connector'.
+[2023-10-27 10:02:00] [WARNING] - High memory usage detected: 85%
+This is a malformed line that should be skipped.
+[2023-10-27 10:02:30] [ERROR] - Failed to connect to database: Connection timed out after 3000ms.
+[2023-10-27 10:02:31] [ERROR] - Traceback:
+  File "/app/main.py", line 52, in connect_db
+    raise ConnectionError("Connection timed out")
+[2023-10-27 10:03:00] [CRITICAL] - System shutting down due to critical error.
+[2023-10-27 10:04:00] [INFO] - User 'admin' logged out successfully.
+[2023-10-27 10:05:00] [DEBUG] - Cleanup task started.
+[2023-10-27 10:06:00] [INFO] - Backup completed successfully.
+[2023-10-27 10:07:00] [DEBUG] - Service 'db_connector' reconnected successfully.
+[2023-10-27 10:08:00] [INFO] - Scheduled maintenance started.
